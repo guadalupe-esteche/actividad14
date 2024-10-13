@@ -152,6 +152,18 @@ document.write("<br>");
 */
 
 /* ARRAY: NO DENSOS O DISPERSOS */
+let arrayPremios = [];
+        let cant = 0;
+        do {
+            let nroPremio = parseInt(Math.random() * 1000);
+            arrayPremios[nroPremio] = 1000 * (cant + 1);
+            cant++;
+        } while (cant != 11);
+        for (let f = 0; f < arrayPremios.length; f++) {
+            if (arrayPremios[f] != undefined) {
+                document.write('Rifa ' + f + ' tiene un premio de ' + carton[f] + '<br>');
+            }
+        }
 
 // /* ARRAY: METODO SPLICE
 // /*let vec = [0, 1, 2, 3, 9, 2, 6, 6, 8, 2]; definicion del vector */
